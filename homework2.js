@@ -64,8 +64,9 @@ const persons = [
 
 
 function returnString(array) {
-    return array[0].firstname + ' ' + array[0].lastname;
+    return array.firstname + ' ' + array.lastname;
 };
-console.log('I have just met a person whose name is ' + returnString(persons));
-
-
+console.log('I have just met a person whose name is ' + returnString(persons[0]));
+console.log('I have just met a person whose name is ' + returnString(persons[1]));
+console.log('I have just met a person whose name is ' + returnString(persons[2]));
+console.log('I have just met a person whose name is ' + returnString(persons[3]));
