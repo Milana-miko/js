@@ -103,6 +103,18 @@ function isZodiacSignNameExists(peopleArray, zodiacArray) {
         return peopleArray + " is " + zodiacArray.zodiacSignName + " his/her supporting planet is " + zodiacArray.supportingPlanet + " and color is " + zodiacArray.color;
     }
 }
+
+//or
+/*
+function isZodiacSignNameExists(peopleArray, zodiacArray) {
+    if(zodiacArray.zodiacSignName) {
+        return peopleArray + " is " + zodiacArray.zodiacSignName + " his/her supporting planet is " + zodiacArray.supportingPlanet + " and color is " + zodiacArray.color;
+    }else {
+        return "No zodiacsign found for " + peopleArray + ", please, check info.";
+    }
+}
+*/
+
 console.log(isZodiacSignNameExists(people[0], zodiacSign[0]));
 console.log(isZodiacSignNameExists(people[1], zodiacSign[1]));
 console.log(isZodiacSignNameExists(people[2], zodiacSign[2]));
