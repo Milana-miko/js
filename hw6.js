@@ -1,18 +1,18 @@
 //Task 1
 
+let randomFromZeroToOne = Math.floor(Math.random() * 11);
 function checkMoreLess(num) {
-    if(Math.random() < num) {
+    if(randomFromZeroToOne < num) {
         return "My number is greater than a randomly generated number!";
-    } else if(Math.random() > num) {
+    } else if(randomFromZeroToOne > num) {
         return "Randomly generated number is more than my number!";
-    } else if(Math.random() === num) {
+    } else if(randomFromZeroToOne === num) {
         return "Randomly generated number equals my number!";
     }
 }
 
-console.log(checkMoreLess(0.6));
-
-
+console.log(checkMoreLess(6));
+console.log(randomFromZeroToOne);
 
 //Tas 2
 
@@ -28,7 +28,7 @@ function checkBirthday(bDay, bMonth) {
     }
 }
 
-checkBirthday(15, 3);
+checkBirthday(16, 3);
 checkBirthday(12, 11);
 
 
