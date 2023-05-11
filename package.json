@@ -1,0 +1,22 @@
+{
+  "name": "js-lesson",
+  "version": "1.0.0",
+  "description": "Learning JS",
+  "main": "index.js",
+  "dependencies": {
+    "chalk": "^5.2.0",
+    "chalk-animation": "^2.0.3",
+    "dayjs": "^1.11.7",
+    "num-words": "^1.2.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "js",
+    "node"
+  ],
+  "author": "Milana Amelyan",
+  "license": "ISC",
+  "type": "module"
+}
