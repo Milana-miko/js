@@ -50,15 +50,51 @@ const persons = [
   ];
 
 
-  function genderFilter(arr, personeGender){
-    return arr.filter((item) => {
-        if(item.gender === personeGender) {
-            return item;
-        } 
+  // function genderFilter(arr, personeGender){
+  //   return arr.filter((item) => {
+  //       if(item.gender === personeGender) {
+  //           return item;
+  //       } 
     
-    });
+  //   });
 
-  } 
+  // } 
 
-  console.log(genderFilter(persons, "Female"));
+  // console.log(genderFilter(persons, "Female"));
 
+
+  // function changeGender(arr) {
+  //   return arr.map((item) => {
+  //     if(item.gender === "Male") {
+  //       item.gender = "Txamard";
+  //     } else {
+  //       item.gender = "Kin";
+  //     }
+  //     return item;
+  //   });
+  // }
+
+  // console.log(changeGender(persons));
+
+
+// function changeID(arr) {
+//     return arr.map((item) => {
+//       item.id = "ID - " + item.id;
+//       return item;
+//     });
+// }
+
+// console.log(changeID(persons));
+
+function changeRes (arr) {
+  return arr.map((item) => {
+    if(Math.round(Math.random()) === 1) {
+      item.residence = true;
+    } else {
+      item.residence = false;
+    }
+    return item;
+  })
+}
+
+console.log(changeRes(persons));
