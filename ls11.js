@@ -21,3 +21,7 @@ console.log(allWordsUpperCase(str));
 napisat funciyu kotoraya vazvrashaet string naoborot
 napriner, Ani vernet Ina */
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 91b2cf654f2f3ef21237e603fe83e3b2ff7cda8b
