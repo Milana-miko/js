@@ -108,8 +108,6 @@ function findAge(arr) {
 
 
 //Task 3
-//Use persons object and return nationality of every item in one array, Make nationality first letter uppercase.
-//like this: ['Switzerland', 'Syria', ...]
 
 const persons1 = [
     {
