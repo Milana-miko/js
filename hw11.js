@@ -2,37 +2,20 @@
 //Define an array of numbers, create function that will have 2 params (arr, kentOrZuyg).
 //If i pass 'kent', it should return kent numbers, if I pass zuyg, it should return 'zuyg' numbers
 
-const numbersArr = [
-    {
-        num: 1,
-        kOrZ: "Kent"
-    },
-    {
-        num: 2,
-        kOrZ: "zuyg"
-    },
-    {
-        num: 3,
-        kOrZ: "kent"
-    },
-    {
-        num: 4,
-        kOrZ: "Zuyg"
-    }
-];
+const numArr = [1, 2, 3, 4];
 
-function numbersFilter(arr, kentOrZuyg){
+function findZuygOrKent(arr, kOZ) {
     return arr.filter((item) => {
-        if(item.kOrZ.toLowerCase() === kentOrZuyg) {
+        if(item % 2 === 0 && kOZ === "Zuyg"){
             return item;
-        } 
-    }).map(function(arr) {
-        return arr.num;
+        } else if(item % 2 !== 0 && kOZ === "Kent") {
+            return item;
+        }
     });
+}
 
-} 
-
-//console.log(numbersFilter(numbersArr, "zuyg"));
+console.log(findZuygOrKent(numArr, "Zuyg"));
+console.log(findZuygOrKent(numArr, "Kent"));
 
 
 //Task 2
@@ -99,12 +82,11 @@ function findAge(arr) {
         let bdYear = bd.pop();
         let age = year - bdYear;
         item.personeAge = age;
-        arr.push(age);
         return item;
     });
 }
 
-//console.log(findAge(persons));
+console.log(findAge(persons));
 
 
 //Task 3

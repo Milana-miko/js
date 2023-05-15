@@ -50,17 +50,17 @@ const persons = [
   ];
 
 
-  // function genderFilter(arr, personeGender){
-  //   return arr.filter((item) => {
-  //       if(item.gender === personeGender) {
-  //           return item;
-  //       } 
+  function genderFilter(arr, personeGender){
+    return arr.filter((item) => {
+        if(item.gender === personeGender) {
+            return item;
+        } 
     
-  //   });
+    });
 
-  // } 
+  } 
 
-  // console.log(genderFilter(persons, "Female"));
+  console.log(genderFilter(persons, "Female"));
 
 
   // function changeGender(arr) {
@@ -86,15 +86,15 @@ const persons = [
 
 // console.log(changeID(persons));
 
-function changeRes (arr) {
-  return arr.map((item) => {
-    if(Math.round(Math.random()) === 1) {
-      item.residence = true;
-    } else {
-      item.residence = false;
-    }
-    return item;
-  })
-}
+// function changeRes (arr) {
+//   return arr.map((item) => {
+//     if(Math.round(Math.random()) === 1) {
+//       item.residence = true;
+//     } else {
+//       item.residence = false;
+//     }
+//     return item;
+//   })
+// }
 
-console.log(changeRes(persons));
+// console.log(changeRes(persons));
