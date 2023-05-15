@@ -143,10 +143,10 @@ const persons1 = [
 ];
 
 function findNationality (arr) {
-    return arr.reduce((acc, item) => {
-        acc.push(item.nationality.charAt(0).toUpperCase() + item.nationality.substring(1));
-        return acc;
-    }, []);
+    return arr.map((arr) => {
+      return arr.nationality.charAt(0).toUpperCase() + arr.nationality.substring(1);;
+    });
+    
 }
 
 console.log(findNationality(persons1));
