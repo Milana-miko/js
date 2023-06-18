@@ -50,6 +50,11 @@ function findValues(obj) {
 
 console.log(findValues(menuItems));  
 
+
+
+
+
+
 //Tarberak 2
 
 function returnString(obj) {
@@ -60,3 +65,5 @@ function returnString(obj) {
 }
 
 console.log(returnString(menuItems));  
+
+
