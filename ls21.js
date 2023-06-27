@@ -34,9 +34,9 @@ const otherArr = [...myArr, ...myArr2, "Spitak", {guyn: "Narnjaguyn"}];
 
 const{ firstname, lastname, ...otherProps} = myObj; // nuyn e ete gres const firstname = myObj.firstname, const lastname = myObj.lastname // aysinkn stexcum enk popoxakanner myObj tvyalnerov
 
-// console.log(firstname);
-// console.log(lastname);
-// console.log(otherProps);
+console.log(firstname);
+console.log(lastname);
+console.log(otherProps);
 
 //rest - nshanakum e mnacac
 
@@ -53,4 +53,4 @@ const{ firstname, lastname, ...otherProps} = myObj; // nuyn e ete gres const fir
 //console.log(randomObj);
 
 const {id, curly, ...newSaveObj} = myObj;
-console.log(newSaveObj);
+//console.log(newSaveObj);
