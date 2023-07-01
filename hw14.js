@@ -16,10 +16,7 @@ returnSingerAndSong(singers, songs);
 function makeObj(arr3, arr4) {
     
     return arr3.map((item, i) => {
-        let obj = {};
-        obj.singer = item; 
-        obj.song = arr4[i];
-        return obj;
+        return {singer: item, song: arr4[i]};
     }); 
 }
 
