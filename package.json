@@ -18,5 +18,8 @@
   ],
   "author": "Milana Amelyan",
   "license": "ISC",
-  "type": "module"
+  "type": "module",
+  "devDependencies": {
+    "eslint": "^8.44.0"
+  }
 }
